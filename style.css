@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container
+{
+    margin: 15px 100px 0 100px;
+    background-color: #FFFDFF;
+    height: 60px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img
+{
+    width: 140px;
+}
+.menuItems li{
+    display: inline;
+    margin-right: 20px;
+}
+.menuItems li a
+{
+    text-decoration: none;
+    color: #000;
+}
+.loginButton a{
+    color: #000;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.loginButton button{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px 0 20px 20px;
+    border-style: none;
+    background: linear-gradient(120deg,#E5578D,#CF48D4);
+    box-shadow: 1px 1px 3px #000;
+    color: #fff;
+    transition: 300ms;
+}
+.loginButton button:hover{
+    border-radius: 20px;
+    background: linear-gradient(120deg,#fc5f9b,#ed17f5);
+}
+.loginButton button:active{
+    box-shadow:none;
+}
+.heroSection{
+    /* background-color: darkcyan; */
+    height: calc(100vh - 85px);
+    background: url(./img/back-image.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+.heroContainer{
+    /* background-color: chartreuse; */
+    margin: 10px 100px;
+    display: flex;
+    justify-content: space-betweens;
+}
+
+.msg{
+    /* border:1px solid #000; */
+    overflow: hidden;
+    height: 0;
+    transition: 600ms;
+}
+.msgfun{
+    height: 185px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 50%;
+    height: calc(100vh - 85px);
+    /* sbackground-color: #fc5f9b; */
+}
+.left h1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.btn{
+    /* border: 2px solid #fff; */
+    width: 155px;
+    height: 0px;
+    overflow: hidden;
+    transition: 600ms;
+    /* background-color: aquamarine; */
+    padding: 0;
+    
+}
+.btnfun{
+
+    height: 55px;
+}
+.btn button{
+    margin-top: 6px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px 0 20px 20px;
+    border-style: none;
+    background: linear-gradient(120deg,#E5578D,#CF48D4);
+    box-shadow: 1px 1px 3px #000;
+    color: #fff;
+    transition: 300ms;
+}
+.heroSection button:hover{
+    background: linear-gradient(120deg,#fc5f9b,#ed17f5);
+    border-radius: 20px;
+}
+.heroSection button:active{
+    box-shadow:none;
+}
+.right{
+    position: relative;
+    /* background-color: aquamarine; */
+    width: 50%;
+    height: calc(100vh - 85px);
+}
+ 
+.right img
+{   
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    width: 450px;
+    padding: 0;
+    opacity: 0;
+    transition: 600ms;
+}
+
+.right .imgShow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    width: 450px;
+    padding: 0;
+    opacity: 100%;
+}
